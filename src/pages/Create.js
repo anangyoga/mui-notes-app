@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography, Button, Container, TextField, Box } from "@mui/material/";
+import { Typography, Button, Container, TextField, Box, Radio, RadioGroup, FormControlLabel, FormLabel, FormControl } from "@mui/material/";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 
 export default function Create() {
@@ -7,6 +7,9 @@ export default function Create() {
   const [details, setDetails] = React.useState("");
   const [titleError, setTitleError] = React.useState(false);
   const [detailsError, setDetailsError] = React.useState(false);
+  const [category, setCategory] = React.useState("");
+
+  // form control
   const handleSubmit = (e) => {
     e.preventDefault();
     setTitleError(false);
@@ -19,8 +22,8 @@ export default function Create() {
       setDetailsError(true);
     }
 
-    if (title && details) {
-      console.log(title, details);
+    if (title && details && category) {
+      console.log(title, details, category);
     }
   };
   return (
@@ -61,6 +64,16 @@ export default function Create() {
           error={detailsError}
           helperText="You have to write something"
         />
+
+        <FormControl sx={{ marginY: 5, display: "block" }}>
+          <FormLabel id="demo-radio-buttons-group-label">Note Category</FormLabel>
+          <RadioGroup value={category} onChange={(e) => setCategory(e.target.value)}>
+            <FormControlLabel label="Money" value="money" control={<Radio />}></FormControlLabel>
+            <FormControlLabel label="Todo" value="todo" control={<Radio />}></FormControlLabel>
+            <FormControlLabel label="Reminders" value="reminders" control={<Radio />}></FormControlLabel>
+            <FormControlLabel label="Work" value="work" control={<Radio />}></FormControlLabel>
+          </RadioGroup>
+        </FormControl>
 
         <Button endIcon={<KeyboardArrowRightIcon />} type="submit" color="secondary" variant="contained">
           Submit

@@ -1,0 +1,58 @@
+{
+  "notes": [
+    {
+      "title": "Yoshi's Birthday Bash",
+      "details": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
+      "category": "reminders",
+      "id": 1
+    },
+    {
+      "title": "Complete ReactJs Course",
+      "details": "It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. ",
+      "category": "work",
+      "id": 2
+    },
+    {
+      "title": "Order a Pizza!",
+      "details": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard. ",
+      "category": "todo",
+      "id": 3
+    },
+    {
+      "title": "Daily Check-in ",
+      "details": "Today I'm going to learn Material-UI from The Net Ninja",
+      "category": "work",
+      "id": 4
+    },
+    {
+      "title": "check",
+      "details": "check",
+      "category": "reminders",
+      "id": 5
+    },
+    {
+      "title": "check",
+      "details": "check",
+      "category": "reminders",
+      "id": 6
+    },
+    {
+      "title": "check",
+      "details": "check",
+      "category": "reminders",
+      "id": 7
+    },
+    {
+      "title": "tes",
+      "details": "tessss",
+      "category": "reminders",
+      "id": 8
+    },
+    {
+      "title": "more checkin",
+      "details": "this is the last checking",
+      "category": "reminders",
+      "id": 9
+    }
+  ]
+}

@@ -1,8 +1,10 @@
 import React from "react";
 import { Typography, Button, Container, TextField, Box, Radio, RadioGroup, FormControlLabel, FormLabel, FormControl } from "@mui/material/";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
+import { useHistory } from "react-router-dom";
 
 export default function Create() {
+  const history = useHistory();
   const [title, setTitle] = React.useState("");
   const [details, setDetails] = React.useState("");
   const [titleError, setTitleError] = React.useState(false);
@@ -22,10 +24,26 @@ export default function Create() {
       setDetailsError(true);
     }
 
-    if (title && details && category) {
-      console.log(title, details, category);
+    if (title && details) {
+      // request to the same endpoint
+      // add second argument, which is object
+      fetch("http://localhost:8000/notes", {
+        // this tell fetch that we're making POST request data
+        method: "POST",
+        // this tell what type content that gonna be sent, it's JSON
+        headers: { "Content-type": "application/json" },
+        // this is where we sent the json data, which is an object
+        body: JSON.stringify({
+          // we have to stringify because we can't sent JS object
+          // it has to be in JSON format
+          title,
+          details,
+          category,
+        }),
+      }).then(() => history.push("/"));
     }
   };
+
   return (
     <Container>
       <Typography variant="h6" color="textSecondary" component="h2" gutterBottom>

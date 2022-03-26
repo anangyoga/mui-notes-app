@@ -19,40 +19,10 @@
       "id": 3
     },
     {
-      "title": "Daily Check-in ",
-      "details": "Today I'm going to learn Material-UI from The Net Ninja",
-      "category": "work",
+      "title": "Mario's Birthday Present",
+      "details": "I'm going to buy present for Mario this weekend",
+      "category": "reminders",
       "id": 4
-    },
-    {
-      "title": "check",
-      "details": "check",
-      "category": "reminders",
-      "id": 5
-    },
-    {
-      "title": "check",
-      "details": "check",
-      "category": "reminders",
-      "id": 6
-    },
-    {
-      "title": "check",
-      "details": "check",
-      "category": "reminders",
-      "id": 7
-    },
-    {
-      "title": "tes",
-      "details": "tessss",
-      "category": "reminders",
-      "id": 8
-    },
-    {
-      "title": "more checkin",
-      "details": "this is the last checking",
-      "category": "reminders",
-      "id": 9
     }
   ]
 }

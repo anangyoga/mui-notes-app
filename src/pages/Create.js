@@ -59,7 +59,7 @@ export default function Create() {
           }}
           label="Note Title"
           variant="outlined"
-          color="secondary"
+          color="primary"
           fullWidth
           required
           error={titleError}
@@ -73,7 +73,7 @@ export default function Create() {
           }}
           label="Details"
           variant="outlined"
-          color="secondary"
+          color="primary"
           // multiline and row to expand the width/height of the box
           multiline
           rows={4}
